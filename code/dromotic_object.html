@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="styledromotic.css">
     <title>Dromotic</title>
     <script>
-    window.onload
-        $("li").click(function() {
-            alert("clicked:");
+    window.onload=function(){
+        $('li').click(function(){
+            if(!$(this).hasClass('active')){
+                $('#shortcut li.active').removeClass('active');
+                $(this).addClass('active');
+            }              
         });
+    }
     </script>
 </head>
 <body>
@@ -31,14 +35,14 @@
                 <h3>Consumo Elettrodomestici</h3><span class="bar"><span class="elettro"></span></span><p>25%</p>
             </li>
             <li>
-                <h3>Consumo</h3><span class="bar"><span class="ultimo"></span></span><p>15%</p>
+                <h3>Batteria</h3><span class="bar"><span class="batteria"></span></span><p>15%</p>
             </li>
         </div>
         <nav>
-            <ul>
+            <ul id="shortcut">
                 <li class="active"><i class="fas fa-lightbulb"></i></a></li>
                 <li><i class="fas fa-blender-phone"></i></li>
-                <li><i class="fas fa-question"></i></li>
+                <li><i class="fas fa-battery-three-quarters"></i></li>
             </ul>
 
         </nav>

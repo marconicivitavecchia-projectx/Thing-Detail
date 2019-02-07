@@ -96,12 +96,12 @@ aside .consumi li p{
     }
 }
 
-.ultimo {
+.batteria {
     width: 15%;
-    animation: ultimo 2s;
+    animation: battery 2s;
 }
 
-@keyframes ultimo { 
+@keyframes battery { 
     0% {
         width: 0%;
     }
