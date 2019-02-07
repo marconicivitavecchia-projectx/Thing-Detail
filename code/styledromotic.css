@@ -4,11 +4,11 @@
 }
 
 body {
-    background: #333;
+    background: #808080;
 }
 
 header h1 {
-    color: ghostwhite;
+    color: #333;
     margin: 20px;
 }
 
@@ -20,11 +20,11 @@ aside {
 
 aside .consumi {
     border: 1px solid rgba(0,0,0,0.3);
-    box-shadow: 0 0 10px #2187e7b3;
     border-radius: 3px;
     height: 400px;
     color: ghostwhite;
     list-style: none;
+    background: #333;
 }
 
 aside .consumi li{
@@ -33,6 +33,7 @@ aside .consumi li{
 
 aside .consumi li p{
     color: #2187e7;
+    text-shadow: 0 0 10px #2187e7b3;
     float: right;
     margin: 10px 10px;
 }
@@ -55,7 +56,7 @@ aside .consumi li p{
 
 .totale {
     width: 70%;
-    animation: totale 2s;
+    animation: totale 1.5s;
 }
 
 @keyframes totale { 
@@ -69,7 +70,7 @@ aside .consumi li p{
 
 .luci {
     width: 30%;
-    animation: luci 2s;
+    animation: luci 1.5s;
 }
 
 @keyframes luci { 
@@ -108,4 +109,39 @@ aside .consumi li p{
         width: 15%;
     }
 }
+
+nav {
+    background: red;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    padding: 20px 45px;
+    background-color: #333;
+    color: #2187e7;
+    text-shadow: 0 0 10px #2187e7b3;
+}
+
+nav ul li.active {
+    background-color:#1a1a1a;
+    color: whitesmoke;
+    text-shadow: none;
+}
+
+nav ul li:hover {
+    background-color:#262626;
+    color: whitesmoke;
+    text-shadow: none;
+}
+
 
