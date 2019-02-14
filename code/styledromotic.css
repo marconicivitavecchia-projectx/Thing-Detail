@@ -16,6 +16,7 @@ aside {
     height: 500px;
     width: 35%;
     margin: 20px; 
+    float: left;
 }
 
 aside .consumi {
@@ -110,20 +111,31 @@ aside .consumi li p{
     }
 }
 
-nav {
-    background: red;
+.details{
+    background-color: #333;
+    height: 200px;
+    margin-left: 800px;
+    width: 30%;
 }
 
-nav ul {
+#container{
+    margin-top: 40px;
+}
+
+.nav {
+    
+}
+
+.nav ul {
     list-style: none;
 }
 
-nav ul li {
+.nav ul li {
     list-style: none;
     float: left;
 }
 
-nav ul li {
+.nav ul li {
     float: left;
     list-style: none;
     padding: 20px 45px;
@@ -132,13 +144,13 @@ nav ul li {
     text-shadow: 0 0 10px #2187e7b3;
 }
 
-nav ul li.active {
+.nav ul li.active {
     background-color:#1a1a1a;
     color: whitesmoke;
     text-shadow: none;
 }
 
-nav ul li:hover {
+.nav ul li:hover {
     background-color:#262626;
     color: whitesmoke;
     text-shadow: none;

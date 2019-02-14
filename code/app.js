@@ -16,7 +16,7 @@ app = {
         console.log("error!");
         console.log(JSON.stringify(e));
     }
-};
+}
 
 
 
