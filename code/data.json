@@ -1,15 +1,44 @@
 {
-    "consumiList" : [
-        {
-            "Totale" : "70"
-
-        },
-        {
-            "Luci" : "30"
-        },
-        {
-            "Elettrodomestici" : "40"
-        }
-
-    ]
+    "RateList": [{
+        "Title": "Consumo Totale",
+        "Rate": "70%",
+        "Class": "totale"
+    }, {
+        "Title": "Consumo Luci",
+        "Rate": "30%",
+        "Class": "luci"
+    }, {
+        "Title": "Consumo Elettrodomestici",
+        "Rate": "25%",
+        "Class": "elettro"
+    }, {
+        "Title": "Batteria",
+        "Rate": "15%",
+        "Class": "batteria"
+    }],
+    "ThingList": [{
+        "Type": "Elettrodomestici",
+        "Thing": [{
+            "Name": "Forno",
+            "State": "off"
+        }, {
+            "Name": "Scaldabagno",
+            "State": "off"
+        }, {
+            "Name": "Condizionatore",
+            "State": "on"
+        }]
+    }, {
+        "Type": "Luci",
+        "Thing": [{
+            "Name": "Cucina",
+            "State": "on"
+        }, {
+            "Name": "Soggiorno",
+            "State": "on"
+        }, {
+            "Name": "Camera da letto",
+            "State": "off"
+        }]
+    }]
 }

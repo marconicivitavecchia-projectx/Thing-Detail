@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>ProjectX-Thing Detail</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function () {
+            $('li').click(function () {
+                if (!$(this).hasClass('active')) {
+                    $('#shortcut li.active').removeClass('active');
+                    $(this).addClass('active');
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>ProjectX-Thing Detail</h1>
+    </header>
+
+    <aside>
+        <div class="consumi" id="rates">
+        </div>
+    </aside>
+    <div id="container">
+        <!--<div class="nav">
+            <ul id="shortcut">
+                <li class="active"><i class="fas fa-lightbulb"></i></a></li>
+                <li><i class="fas fa-blender-phone"></i></li>
+            </ul>
+        </div>-->
+        <div class="details" id="things">
+            <h3>Elettrodomestici:</h3>
+            <div class="object">Forno
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="object">Tv soggiorno 
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="object">Condizionatore 
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <h3>Luci:</h3>
+            <div class="object">Cucina 
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="object">Soggiorno 
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="object">Camera da letto 
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
